@@ -72,6 +72,9 @@ _TeamCity*
 # DotCover is a Code Coverage Tool
 *.dotCover
 
+# NPM modules
+AppSource/node_modules
+
 # NCrunch
 *.ncrunch*
 .*crunch*.local.xml

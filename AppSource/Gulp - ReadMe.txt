@@ -17,7 +17,7 @@ you will get warnings in the console if you try to compile the Compass sass file
 
 Download and install the latest version from http://rubyinstaller.org/. Make sure that Ruby is in
 the windows PATH. The install tool should have options for doing this. If not.... google it.
-You might also have to install the Dev kit (SDK), http://rubyinstaller.org/downloads/ (at the bottom)
+You might also have to install the Dev kit (SDK), http://rubyinstaller.org/downloads/ (at the bottom). You can find the installation instructions here: https://github.com/oneclick/rubyinstaller/wiki/Development-Kit. 
 
 ###### Verify installations
 Open your Git Bash console.
@@ -45,11 +45,13 @@ type> npm install -g gulp
 
 ## Now you need to navigate to your project folder. The gulpfile.js should be in the root.
 ## Theese addons will be installed in your project folder. Don´t include any node_modules in your source controll. 
+type> npm install
+
+## If this fails you can try to install all the dependencies directly by: 
 type> npm install gulp gulp-util gulp-ember-handlebars ecstatic http path event-stream gulp-util lodash.assign gulp-ruby-sass gulp-autoprefixer gulp-minify-css gulp-jshint gulp-concat gulp-uglify gulp-imagemin gulp-clean gulp-rename gulp-livereload tiny-lr gulp-cache --save-dev
 
-
 ##You will also need the "Compass" extension for Ruby. In the console 
-type> gem install compass 
+type> gem install compass
 
 
 ##########################################################################################################
