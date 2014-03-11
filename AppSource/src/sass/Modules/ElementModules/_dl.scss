@@ -1,0 +1,28 @@
+dl{
+	&.defined-informationlist {
+    display: inline-block;
+    width: 75%;
+		dt {
+			float: left;
+			width: 40%;
+			clear: right;
+		}
+		dd {
+			float: right;
+			width: 60%;
+		}
+	}
+
+	&.inlineblock-informationlist{
+		dt{
+			margin-right: 5px;
+			font-weight: bold;
+			@include inline-block;
+		}
+		dd{
+			@include inline-block;
+			clear: right;
+		}
+	}
+}
+

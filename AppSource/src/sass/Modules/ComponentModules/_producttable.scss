@@ -1,0 +1,37 @@
+﻿.product-border-shadow{
+	border-bottom: 1px solid #ccc;
+	@include box-shadow(#ccc 0px 1px 2px);
+}
+
+.product-options{
+	background-color: #fbfbfb;
+}
+
+
+.product-header{
+	font-size: 1.5em;
+}
+
+.product-header:first-letter{
+	text-transform: uppercase;
+}
+
+.product-info{
+	font-size: 11px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.product-info-lang{
+	font-size: 10px;
+	text-transform: uppercase;
+	color: $color-yellow;
+}
+
+.product-border-b{
+	border-bottom: 1px solid #cbd8e1;
+}
+
+.product-even{
+	background-color: #fbfbfb;
+}

@@ -1,0 +1,12 @@
+﻿a {
+	cursor: pointer;
+    color: $color-light-blue;
+
+    &:hover{
+		text-decoration: underline;
+    }
+
+	&.white{
+		color: $color-white;
+	}
+}

@@ -1,0 +1,36 @@
+﻿h2{
+	font-size: 18px;
+	font-weight: normal;
+
+	&.study{
+		font-weight: normal;
+		color: $color-blue;
+		font-size: 16px;
+	}
+	
+	&.normal{
+		font-weight: normal;
+		color: #333333;
+		font-size: 1.5em;
+
+		&.blue-link{
+			cursor: pointer;
+			color: #2b619d;
+			text-decoration: none;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+
+	&.priority{
+		font-weight: normal;
+		line-height: 31px;
+		font-size: 1.5em;
+	}
+
+	&.errorpage{
+		font-weight: normal;
+		font-size: 40px;
+	}
+}

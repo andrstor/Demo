@@ -1,0 +1,158 @@
+﻿/* Variables */
+$border-gray: 1px solid $color-light-gray;
+$border-blue: 1px solid $color-lighter-blue;
+
+/* Extensions */
+%header-extend{
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+%cell-header-extend{
+	font-weight: bold;
+	font-size: 11px;
+	text-align: left;
+	margin-left: 5px;
+	text-transform: uppercase;
+}
+
+%cell-text-extend{
+	text-align: center;
+	font-size: 16px;
+	line-height: 22px;
+	padding: 5px 5px 10px 5px;
+}
+
+%cell-edit-extend{
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: underline;
+	font-size: 14px;
+}
+
+%cell-pointer-extend{
+	cursor: pointer;
+	font-weight: bold;
+}
+
+@mixin header-type($color, $bg-color){
+	color: $color;
+	background-color: $bg-color;
+}
+
+/* Component */
+.infotable {
+	
+    &.header{ 
+		@extend %header-extend;
+		@include header-type($color-white, $color-blue);
+    }
+
+	&.header-white{ 
+		@extend %header-extend;
+		@include header-type($color-blue, $color-white);
+
+		&:hover{
+			@include header-type($color-blue, $color-lighets-gray);	
+			@include transition-duration(0.2s);
+		}
+    }
+
+	&.header-gray{
+		@extend %header-extend;
+		@include header-type($color-blue, $color-lighets-gray);
+	}
+
+	&.cell-header{
+		@extend %cell-header-extend;
+	}
+
+	&.cell-text{
+		@extend %cell-text-extend;
+	}
+
+	&.edit{
+		@extend %cell-edit-extend;
+		&:hover{
+			text-decoration: none;
+			cursor: pointer;
+		}
+	}
+
+	&.cell-input{
+		content: " ";
+		min-height: 74px;
+	}
+
+	&.cell-border{
+		
+		&.top-gray{
+			border-top: $border-gray;
+		}
+		&.top-blue{
+			border-top: $border-blue;
+		}
+		&.right-gray{
+			border-right: $border-gray;
+		}
+		&.right-blue{
+			border-right: $border-blue;
+		}
+		&.bottom-gray{
+			border-bottom: $border-gray;
+		}
+		&.bottom-blue{
+			border-bottom: $border-blue;
+		}
+		&.left-gray{
+			border-left: $border-gray;
+		}
+		&.left-blue{
+			border-left: $border-blue;
+		}
+	}
+
+	&.disabled{
+		color: $color-gray;
+		border: $border-gray;
+		background-color: $color-lighter-gray;
+		cursor: default;
+	}
+
+	&.red{
+		color: $color-red;
+	}
+
+	&.blue{
+		color: $color-blue;
+	}
+
+	&.bg-blue{
+		background-color: $color-blue;
+	}
+
+    &.bg-yellow {
+        background-color: $color-light-yellow;
+    }
+
+	&.bg-white{
+		background-color: $color-white;
+	}
+
+	&.plus-white{
+		background: url($imagePath + "/icon-plus-white.png") no-repeat 50% 50%;
+	}								   
+	&.plus-blue{					   
+		background: url($imagePath + "/icon-plus-blue.png") no-repeat 50% 50%;
+	}								   
+	&.minus-white{					   
+		background: url($imagePath + "/icon-minus-white.png") no-repeat 50% 50%;
+	}								   
+	&.minus-blue{					   
+		background: url($imagePath + "/icon-minus-blue.png") no-repeat 50% 50%;
+	}
+
+	&.info-l-blue{
+		background: url($imagePath +"/icon-info-20-light-blue.png") no-repeat 100% 100%;
+	}
+}

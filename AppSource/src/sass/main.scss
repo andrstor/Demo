@@ -1,0 +1,9 @@
+﻿	@import "Compass";
+	@import "Global/Variables/_paths";
+	@import "Global/Variables/_colors";	
+
+#ember-app {
+	@import "Global/Frameworks/bootstrap";	
+	@import "compass/reset";
+	@import "Global/Mixins/_mixins";
+}

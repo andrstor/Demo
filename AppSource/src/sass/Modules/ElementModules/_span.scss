@@ -1,0 +1,206 @@
+﻿%icon-type-base{
+	padding-left: 45px;
+	min-height: 21px;
+	@include inline-block();
+	vertical-align: center;
+}
+
+%icon-pointer{
+	cursor: pointer;
+}
+
+span.link{
+	cursor: pointer;
+	text-decoration: underline;
+	&.blue{
+		color: $color-blue;
+	}
+	&.light-blue{
+		color: $color-light-blue;
+	}
+
+	&.white{
+		color: $color-white;
+	}
+
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+span{
+    &.remove{
+		@extend %icon-pointer;
+        @extend %icon-type-base;
+        color: $color-blue;
+        background: url($imagePath +"/icon-remove-15.png") no-repeat 50%;
+
+		&:hover{
+			text-decoration: underline;
+		}
+    }
+	&.plus{
+		@extend %icon-pointer;
+        @extend %icon-type-base;
+        color: $color-dark-blue;
+        background: url($imagePath +"/icon-plus-15.png") no-repeat 50%;
+    }
+	&.minus{
+		@extend %icon-pointer;
+        @extend %icon-type-base;
+        color: $color-dark-blue;
+        background: url($imagePath +"/icon-minus-15.png") no-repeat 50%;
+    }
+	&.info{
+		@extend %icon-pointer;
+        @extend %icon-type-base;
+		padding-left: 0;
+		margin-bottom: 3px;
+		vertical-align: middle;
+		min-height: 15px;
+		min-width: 15px;
+        background: url($imagePath +"/icon-info-14.png") no-repeat right 50%;
+    }
+	&.info-s{
+		@extend %icon-pointer;
+        @extend %icon-type-base;
+		padding-left: 0;
+		min-height: 12px;
+		min-width: 12px;
+        background: url($imagePath +"/icon-info-12.png") no-repeat right 50%;
+    }
+	&.info-l-blue{
+		@extend %icon-pointer;
+        @extend %icon-type-base;
+		padding-left: 0;
+		margin-bottom: 1px;
+		min-height: 20px;
+		min-width: 20px;
+        background: url($imagePath +"/icon-info-20-light-blue.png") no-repeat right 50%;
+    }
+
+	&.info-l-blue-h1{
+		@extend %icon-pointer;
+        @extend %icon-type-base;
+		padding-left: 0;
+		margin: 0px 10px 5px 0px;
+		vertical-align: middle;
+		min-height: 20px;
+		min-width: 20px;
+        background: url($imagePath +"/icon-info-20-light-blue.png") no-repeat right 50%;
+    }
+}
+
+span{
+	&.expandable{
+		@extend %font-normal-size;
+		@extend %icon-pointer;
+		color: $color-light-blue;
+		text-decoration: underline;
+		&:hover{
+			text-decoration: none;
+			font-weight: bold;
+			cursor: pointer;
+		}
+	}
+}
+
+/* Refaktorer */
+
+span.form-error{
+	color: #9b2242;
+	margin-left: 205px;
+	@include inline-block;
+}
+
+span{
+	&.feedback-error{
+		@include inline-block;
+		vertical-align: middle;
+		height: 16px;
+		width: 16px;
+		background: url($imagePath + "/feedback-symbol-error-small.png") no-repeat left 50%;
+	}	
+	&.success{
+		@include inline-block;
+		vertical-align:middle;
+		height: 16px;
+		width: 16px;
+		min-height: 16px;
+		min-width: 16px;
+		padding-right: 5px;
+		background: url($imagePath +"/icon-success.png") no-repeat left 50%;
+	}
+	&.error{
+		@include inline-block;
+		vertical-align:middle;
+		height: 16px;
+		width: 16px;
+		min-height: 16px;
+		min-width: 16px;
+		padding-right: 5px;
+		background: url($imagePath +"/icon-error.png") no-repeat left 50%;
+	}
+}
+
+span.info-modal-close{
+	background: url($imagePath + "/icon-modal-close.png") no-repeat;
+	margin: -4px 1px 0px 0px;
+	display: inline-block;
+	min-height: 15px;
+	min-width: 15px;
+}
+
+span{
+	&.missing-file{
+		@include inline-block;
+		background: url($imagePath +"/icon-error.png") no-repeat;
+	}
+	&.undo-blue{
+		@include inline-block;
+		vertical-align: middle;
+		min-height: 15px;
+		min-width: 15px;
+		background: url($imagePath + "/icon-undo-15-light-blue.png") no-repeat 0% 50%;
+	}
+	&.exclamation{
+		@include inline-block;
+		vertical-align: middle;
+		background: url($imagePath + "/icon-exclamation-red-20.png") no-repeat 0% 50%;
+	}
+}
+
+span{
+	&.loading-anim-upload{
+		@include inline-block;
+		height: 32px;
+		width: 32px;
+		background: url($imagePath + "/loading-anim-upload.gif") no-repeat;
+	}
+
+	&.loading-anim-page{
+		background: url($imagePath + "/page-loading.gif") no-repeat 50% 50%;
+		display: block;
+		min-width: 43px;
+		min-height: 11px;
+	}
+}
+
+span{
+	&.icon-pdf{
+		@include inline-block;
+		min-height: 21px;
+		min-width: 21px;
+		background: url($imagePath + "/file-icon-pdf.png") no-repeat;
+		vertical-align: top;
+	}
+}
+
+span{
+	&.icon-print-large {
+		min-height: 25px;
+		min-width: 25px;
+		background: url($imagePath + "/icon-print-large.png") no-repeat;
+		vertical-align: baseline;
+	}
+}

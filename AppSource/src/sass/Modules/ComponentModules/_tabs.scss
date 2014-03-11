@@ -1,0 +1,51 @@
+﻿.tabs{
+	height: 70px;
+	list-style: none;
+	border-bottom: 1px solid $color-light-gray;
+	cursor: normal;
+
+	.tab{
+		color: $color-dark-blue;
+		text-decoration: underline;
+		cursor: pointer;
+		text-align: center;
+		font-size: 17px;
+		border-right: 1px solid $color-light-gray;
+		display: inline;
+		float: left;
+		padding: 25px 8px;
+		@include box-sizing(border-box);
+		position: relative;
+
+		&:hover{
+			@include transition(all 0.1s ease-in-out);
+			color: $color-medium-gray;
+		}
+
+		&:last-child, &:nth-child(6){
+			border-right: none;
+		}
+
+		&.active{
+			color: $color-dark-gray;
+			text-decoration: none;
+			cursor: default;
+		}
+
+		&.inactive{
+			color: $color-light-gray;
+			text-decoration: none;
+			cursor: default;
+		}
+
+		.tab-active-arrow{
+			width: 23px;
+			height: 12px;
+			position: absolute;
+			bottom: -12px;
+			left: 50%;
+			margin-left: -11.5px;
+			background: url($imagePath + "/stepcounter-down-arrow.png") no-repeat;
+		}
+	}
+}

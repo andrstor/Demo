@@ -1,0 +1,13 @@
+﻿h3 {
+	&.errorpage{
+		font-weight: normal;
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	&.message-title{
+		color: $color-blue;
+		font-style: italic;
+		line-height: 30px;
+	}
+}

@@ -1,0 +1,17 @@
+﻿h1{
+    font-weight: normal;
+    color: #333333;
+	font-size: 22px;
+
+	&.large{
+		color: #ffffff;
+		font-size: 2.5em;
+		margin: 10px 0;
+	}
+
+	&.errorpage{
+		font-size: 100px;
+		margin: 0px;
+	}
+}
+

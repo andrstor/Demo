@@ -1,0 +1,25 @@
+﻿.product-catalog{
+	padding: 7px;
+	background-color: $color-lightest-blue;
+	cursor: pointer;
+
+	.product-catalog-span-link{
+		font-size: 17px;
+		text-decoration: underline;
+		text-transform: uppercase;
+		color: $color-blue;
+
+		&:hover{
+			text-decoration: none;
+		}
+	}
+
+	span.product-catalog-arrow-down{
+		@include inline-block;
+		margin: 5px 0px 0px 10px;
+		width: 25px;
+		height: 23px;
+		vertical-align: middle;
+		background: url($imagePath +"/productcatalog-arrow-down.png") no-repeat;
+	}
+}

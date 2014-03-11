@@ -1,0 +1,47 @@
+﻿ul.tabs {
+    position: relative;
+    font-size: 13px;
+    font-weight: bold;
+    height: 32px;
+    border-bottom: 1px solid #cccccc;
+    
+    li {
+        list-style-type: none;
+        float: left;
+        margin-right: 6px;
+        border-top: 1px solid $color-light-gray;
+        border-right: 1px solid $color-light-gray;
+        border-left: 1px solid $color-light-gray;
+        @include border-radius-top-left-top-right(4px, 4px);
+    }
+    li.active{
+        border-bottom: 1px solid #ffffff;
+    }
+    
+    span {
+        display: block;
+        text-decoration: none;
+        padding-left: 16px;
+        padding-right: 16px;
+        line-height: 30px;
+        color: #333;
+        border-top: 1px solid #fff;
+        letter-spacing: 0.3px;
+
+        @include text-shadow(#FFF 0px 1px 0px);
+        @include border-radius-top-left-top-right(4px, 4px);
+        @include gradient-direction(bottom, #d5d5d5 44%, #e8e8e8 95%, #d5d5d5);
+
+        &:hover {
+            color: $color-blue;
+            text-decoration: none;
+			cursor: pointer
+        }
+
+        &.current {
+            color: $color-blue;
+            @include text-shadow(none);
+            @include gradient-direction (bottom, #ffffff 40%, #f0f0f0 95%, #ffffff);
+        }
+    }
+}

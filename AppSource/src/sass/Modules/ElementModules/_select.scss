@@ -1,0 +1,22 @@
+﻿select{
+    padding: 4px 3px;
+
+    &.product-chooser{
+        width: 150px;
+    }
+
+	&.large {
+        width: 308px;
+    }
+    &.small {
+        width: 161px;
+    }
+	&.apply{
+		width: 100%;
+		margin-left: 8px;
+	}
+}
+
+select.error{
+	border: 1px solid #9b2242;
+}

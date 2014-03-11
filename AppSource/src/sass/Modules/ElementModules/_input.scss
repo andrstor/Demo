@@ -1,0 +1,18 @@
+﻿input[type="text"], input[type="tel"], input[type="password"], input[type="email"], input[type="date"] {
+    padding: 4px 3px;
+}
+
+input[type="text"], input[type="tel"], input[type="password"], input[type="email"], input[type="date"], textarea{
+	&.error{
+		border: 1px solid #9b2242;
+	}
+}
+
+.date input[type="text"][readonly] {
+	background-color: #ffffff;
+	cursor: pointer;
+}
+
+input[type="checkbox"]{
+	margin-bottom: 1px;
+}

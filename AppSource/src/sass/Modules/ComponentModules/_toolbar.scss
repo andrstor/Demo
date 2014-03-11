@@ -1,0 +1,17 @@
+﻿.toolbar{
+	display: table;
+	content: "";
+	width: 100%;
+	min-height: 1px;
+	zoom: 1;
+
+	.toolbar-left{
+		float: left;
+		width: 50%;
+	}
+
+	.toolbar-right{
+		float: right;
+		width: 50%;
+	}
+}

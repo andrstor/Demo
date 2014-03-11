@@ -1,0 +1,30 @@
+.errorbox {
+    padding: 10px;
+    
+	&.top-blue{
+		border-bottom: 1px solid $color-light-gray;
+		background-color: $color-blue-white;
+		margin-top: -20px;
+	}
+
+	&.bottom-red{
+		color: #b94a48;
+		background-color: #f2dede;
+		border: 1px solid #b94a48;
+		@include border-radius(4px);
+	}
+
+	&.bottom-yellow{
+		color: $color-dark-gray;
+		background-color: #fdffe2;
+		border: 1px solid #cccccc;
+		@include border-radius(4px);
+	}
+
+	&.bottom-blue{
+		color: $color-blue;
+		background-color: $color-blue-white;
+		border: 1px solid #4A6C85;
+		@include border-radius(4px);
+	}
+}

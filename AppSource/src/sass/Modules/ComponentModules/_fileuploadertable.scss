@@ -1,0 +1,74 @@
+﻿.fileuploader{
+	text-align: center;
+	border: 1px solid $color-lightest-blue;
+	background-color: $color-blue-white;
+}
+
+p.upload-info{
+	line-height: 15px;
+	color:  #c0c0c0;
+}
+
+span.upload-links{
+	text-transform: uppercase;
+	cursor: pointer;
+	&:hover{
+		text-decoration: underline;
+	}
+}
+
+%arrow-open-close-extend{
+	min-height: 10px;
+	min-width: 10px;
+	@include inline-block();
+}
+%icon-filefeedback-extend{
+	display: block;
+	min-height: 20px;
+	min-width:20px;
+}
+
+span{
+
+	&.arrow-open{
+		background: url($imagePath + "/arrow-open.png") no-repeat;
+		@extend %arrow-open-close-extend;
+	}
+
+	&.arrow-closed{
+		background: url($imagePath + "/arrow-closed.png") no-repeat;
+		@extend %arrow-open-close-extend;
+	}
+
+	&.icon-cross-red-20{
+		background: url($imagePath + "/icon-cross-red-20.png") no-repeat 50%;
+		@extend %icon-filefeedback-extend;
+	}
+
+	&.icon-exclamation-red-20{
+		background: url($imagePath + "/icon-exclamation-red-20.png") no-repeat 50%;
+		@extend %icon-filefeedback-extend;
+	}
+
+	&.icon-ok-green-20{
+		background: url($imagePath + "/icon-ok-green-20.png") no-repeat 50%;
+		@extend %icon-filefeedback-extend;
+	}
+
+	&.icon-pdf-large{
+		background: url($imagePath + "/icon-pdf-large.png") no-repeat;
+		min-height: 50px;
+		min-width: 50px;
+	}
+
+	&.icon-file-large{
+		background: url($imagePath + "/icon-file-blue-50.png") no-repeat;
+		min-height: 50px;
+		min-width: 42px;
+	}
+	&.icon-file-small{
+		background: url($imagePath + "/icon-file-blue-16.png") no-repeat;
+		min-height: 16px;
+		min-width: 13px;
+	}
+}

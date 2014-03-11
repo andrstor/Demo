@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5F62120F-C882-41F3-973F-EA061AE327A5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AppSource</RootNamespace>
+    <AssemblyName>AppSource</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="dist\Content\" />
+    <Folder Include="dist\Images\" />
+    <Folder Include="src\app\models\base\" />
+    <Folder Include="src\app\models\extensions\" />
+    <Folder Include="src\app\Modules\" />
+    <Folder Include="src\app\Plugins\Controls\" />
+    <Folder Include="src\sass\Global\Resets\" />
+    <Folder Include="src\sass\Layout\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dist\fonts\bootstrap\glyphicons-halflings-regular.svg" />
+    <Content Include="dist\Index.html" />
+    <Content Include="dist\Scripts\libs\bootstrap.js" />
+    <Content Include="dist\Scripts\libs\ember-data.js" />
+    <Content Include="dist\Scripts\libs\ember-data.prod.js" />
+    <Content Include="dist\Scripts\libs\ember.js" />
+    <Content Include="dist\Scripts\libs\ember.prod.js" />
+    <Content Include="dist\Scripts\libs\handlebars.js" />
+    <Content Include="dist\Scripts\libs\jquery-1.9.1.js" />
+    <Content Include="dist\Scripts\libs\qunit.js" />
+    <Content Include="dist\Scripts\libs\scriptloader.js" />
+    <Content Include="dist\Scripts\libs\underscore.js" />
+    <Content Include="dist\tests\runner.css" />
+    <Content Include="dist\tests\vendor\jquery.mockajax.js" />
+    <Content Include="dist\tests\vendor\qunit-1.12.0.css" />
+    <Content Include="dist\tests\vendor\qunit-1.12.0.js" />
+    <Content Include="Gulp - ReadMe.txt" />
+    <Content Include="gulpfile.js" />
+    <Content Include="src\app\Pages\application.html" />
+    <Content Include="src\app\Pages\ApplicationController.js" />
+    <Content Include="src\app\Pages\ApplicationRoute.js" />
+    <Content Include="src\app\Pages\ApplicationView.js" />
+    <Content Include="src\app\Pages\application_layout.html" />
+    <Content Include="src\app\Pages\Index\index.html" />
+    <Content Include="src\app\Pages\Index\IndexController.js" />
+    <Content Include="src\app\Pages\Index\IndexRoute.js" />
+    <Content Include="src\app\Pages\Index\IndexView.js" />
+    <Content Include="src\app\Pages\Loading\Loading.html" />
+    <Content Include="src\app\Pages\Loading\LoadingController.js" />
+    <Content Include="src\app\Pages\Loading\LoadingRoute.js" />
+    <Content Include="src\app\Pages\Loading\LoadingView.js" />
+    <Content Include="src\app\Plugins\embermixins\groupableMixin.js" />
+    <Content Include="src\app\Plugins\embermixins\serializable.js" />
+    <Content Include="src\app\Plugins\Handlebarhelpers\helpers.js" />
+    <Content Include="src\app\Plugins\ic-ajax.js" />
+    <Content Include="src\app\Setup\ApplicationSetup.js" />
+    <Content Include="src\app\Setup\Initializers\tempStore.js" />
+    <Content Include="src\app\Setup\RouterSetup.js" />
+    <Content Include="src\app\Setup\setup_test.js" />
+    <Content Include="src\app\Setup\shims\es5-shim.js" />
+    <Content Include="src\app\store\Store.js" />
+    <Content Include="src\app\store\TempStore.js" />
+    <Content Include="src\app\store\transforms.js" />
+    <Content Include="src\libs\bootstrap.js" />
+    <Content Include="src\libs\ember-data.js" />
+    <Content Include="src\libs\ember.js" />
+    <Content Include="src\libs\ember.min.js" />
+    <Content Include="src\libs\handlebars.js" />
+    <Content Include="src\libs\jquery-1.9.1.js" />
+    <Content Include="src\libs\jquery.js" />
+    <Content Include="src\libs\qunit.js" />
+    <Content Include="src\libs\scriptloader.js" />
+    <Content Include="src\libs\underscore.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".jshintrc" />
+    <None Include="config.rb" />
+    <None Include="dist\fonts\bootstrap\glyphicons-halflings-regular.eot" />
+    <None Include="dist\fonts\bootstrap\glyphicons-halflings-regular.ttf" />
+    <None Include="dist\fonts\bootstrap\glyphicons-halflings-regular.woff" />
+    <None Include="packages.json" />
+    <None Include="src\sass\Global\Frameworks\bootstrap.scss" />
+    <None Include="src\sass\Global\Frameworks\bootstrap\bootstrap.scss" />
+    <None Include="src\sass\Global\Frameworks\bootstrap\_alerts.scss" />
+    <None Include="src\sass\Global\Frameworks\bootstrap\_badges.scss" />
+    <None Include="src\sass\Global\Frameworks\bootstrap\_breadcrumbs.scss" />
+    <None Include="src\sass\Global\Frameworks\bootstrap\_button-groups.scss" />
+    <None Include="src\sass\Global\Frameworks\bootstrap\_buttons.scss" />
+    <None Include="src\sass\Global\Frameworks\bootstrap\_carousel.scss" />
+    <None Include="src\sass\Global\Frameworks\bootstrap\_close.scss" />
+    <None Include="src\sass\Global\Frameworks\bootstrap\_code.scss" />
+    <None Include="src\sass\Global\Frameworks\bootstrap\_component-animations.scss" />
+    <None Include="src\sass\Global\Frameworks\bootstrap\_dropdowns.scss" />
+    <None Include="src\sass\Global\Frameworks\bootstrap\_forms.scss" />
+    <None Include="src\sass\Global\Frameworks\bootstrap\_glyphicons.scss" />
+    <None Include="src\sass\Global\Frameworks\bootstrap\_grid.scss" />
+    <None Include="src\sass\Global\Frameworks\bootstrap\_input-groups.scss" />
+    <None Include="src\sass\Global\Frameworks\bootstrap\_jumbotron.scss" />
+    <None Include="src\sass\Global\Frameworks\bootstrap\_labels.scss" />
+    <None Include="src\sass\Global\Frameworks\bootstrap\_list-group.scss" />
+    <None Include="src\sass\Global\Frameworks\bootstrap\_media.scss" />
+    <None Include="src\sass\Global\Frameworks\bootstrap\_mixins.scss" />
+    <None Include="src\sass\Global\Frameworks\bootstrap\_modals.scss" />
+    <None Include="src\sass\Global\Frameworks\bootstrap\_navbar.scss" />
+    <None Include="src\sass\Global\Frameworks\bootstrap\_navs.scss" />
+    <None Include="src\sass\Global\Frameworks\bootstrap\_normalize.scss" />
+    <None Include="src\sass\Global\Frameworks\bootstrap\_pager.scss" />
+    <None Include="src\sass\Global\Frameworks\bootstrap\_pagination.scss" />
+    <None Include="src\sass\Global\Frameworks\bootstrap\_panels.scss" />
+    <None Include="src\sass\Global\Frameworks\bootstrap\_popovers.scss" />
+    <None Include="src\sass\Global\Frameworks\bootstrap\_print.scss" />
+    <None Include="src\sass\Global\Frameworks\bootstrap\_progress-bars.scss" />
+    <None Include="src\sass\Global\Frameworks\bootstrap\_responsive-embed.scss" />
+    <None Include="src\sass\Global\Frameworks\bootstrap\_responsive-utilities.scss" />
+    <None Include="src\sass\Global\Frameworks\bootstrap\_scaffolding.scss" />
+    <None Include="src\sass\Global\Frameworks\bootstrap\_tables.scss" />
+    <None Include="src\sass\Global\Frameworks\bootstrap\_theme.scss" />
+    <None Include="src\sass\Global\Frameworks\bootstrap\_thumbnails.scss" />
+    <None Include="src\sass\Global\Frameworks\bootstrap\_tooltip.scss" />
+    <None Include="src\sass\Global\Frameworks\bootstrap\_type.scss" />
+    <None Include="src\sass\Global\Frameworks\bootstrap\_utilities.scss" />
+    <None Include="src\sass\Global\Frameworks\bootstrap\_variables.scss" />
+    <None Include="src\sass\Global\Frameworks\bootstrap\_wells.scss" />
+    <None Include="src\sass\Global\Mixins\_mixins.scss" />
+    <None Include="src\sass\Global\Variables\_colors.scss" />
+    <None Include="src\sass\Global\Variables\_paths.scss" />
+    <None Include="src\sass\main.scss" />
+    <None Include="src\sass\Modules\ComponentModules\_bordercontainers.scss" />
+    <None Include="src\sass\Modules\ComponentModules\_datepicker-fix.scss" />
+    <None Include="src\sass\Modules\ComponentModules\_errorbox.scss" />
+    <None Include="src\sass\Modules\ComponentModules\_fileuploadertable.scss" />
+    <None Include="src\sass\Modules\ComponentModules\_informationtable.scss" />
+    <None Include="src\sass\Modules\ComponentModules\_loadingapp.scss" />
+    <None Include="src\sass\Modules\ComponentModules\_loadingpage.scss" />
+    <None Include="src\sass\Modules\ComponentModules\_menutab.scss" />
+    <None Include="src\sass\Modules\ComponentModules\_modal.scss" />
+    <None Include="src\sass\Modules\ComponentModules\_product-catalog.scss" />
+    <None Include="src\sass\Modules\ComponentModules\_producttable.scss" />
+    <None Include="src\sass\Modules\ComponentModules\_studytable.scss" />
+    <None Include="src\sass\Modules\ComponentModules\_tabs.scss" />
+    <None Include="src\sass\Modules\ComponentModules\_toolbar.scss" />
+    <None Include="src\sass\Modules\ElementModules\_a.scss" />
+    <None Include="src\sass\Modules\ElementModules\_button.scss" />
+    <None Include="src\sass\Modules\ElementModules\_dl.scss" />
+    <None Include="src\sass\Modules\ElementModules\_h1.scss" />
+    <None Include="src\sass\Modules\ElementModules\_h2.scss" />
+    <None Include="src\sass\Modules\ElementModules\_h3.scss" />
+    <None Include="src\sass\Modules\ElementModules\_hr.scss" />
+    <None Include="src\sass\Modules\ElementModules\_input.scss" />
+    <None Include="src\sass\Modules\ElementModules\_p.scss" />
+    <None Include="src\sass\Modules\ElementModules\_select.scss" />
+    <None Include="src\sass\Modules\ElementModules\_span.scss" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

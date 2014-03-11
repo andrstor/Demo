@@ -1,0 +1,78 @@
+﻿.btn-soke{
+	font-size: 14px;
+	text-align: center;
+	background-color: #e6e6e6;
+	background-image: none;
+	color: #333333;
+	border: 1px solid #cacaca;
+	padding: 10px 25px;
+	cursor: pointer;
+	vertical-align: middle;
+	@include border-radius(2.5px);
+	
+	&:hover{
+		@include transition(all 0.1s ease-in-out);
+		background-color: #eeeeee;
+	}
+
+	&:disabled {
+		opacity:0.5;
+		pointer-events:none;
+		cursor:default;
+		background-position:default;
+		transition:none;
+	}
+
+	&.btn-soke-small{
+		padding: 5px 20px;
+	}
+
+	&.btn-loading-gray{
+		padding-left: 30px;
+		background: #e6e6e6 url($imagePath + "/loading-anim-button-gray.gif") no-repeat 8px 50%;	
+	}
+
+	&.primary{
+		color: #ffffff;
+		background-color: #24506d;
+		border: none;
+		&:hover{
+			@include transition(all 0.1s ease-in-out);
+			background-color: #28597A;
+		}
+		&.btn-loading-blue{
+			padding-left: 30px;
+			background: #24506d url($imagePath + "/loading-anim-button-blue.gif") no-repeat 8px 50%;
+		}
+	}
+
+	&.btn-success {
+		background-color: #7a9918;
+		border: none;
+	}
+
+	&.btn-failure{
+		color: #ffffff;
+		border: none;
+		background-color: #b0302f;
+		&:hover{
+			@include transition(all 0.1s ease-in-out);
+			background-color: #B43B3A;
+		}
+	}
+
+	&.upload-button{
+	    margin-top: 6px;
+		font-size: 18px;
+		padding: 2px 5px;
+		color: $color-blue;
+		border: 1px solid $color-lightest-blue;
+		background-color: $color-white;
+		@include box-shadow($color-gray 1px 1px 5px);
+
+		&:hover{
+			@include transition(all 0.1s ease-in-out);
+			background-color: #EEEEEE;
+		}
+	}
+}

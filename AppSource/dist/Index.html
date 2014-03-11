@@ -1,0 +1,47 @@
+﻿<!-- If logged in to atBI display this element -->
+
+
+<!DOCTYPE html>
+<!--[if IE 8]>    <html lang="en-uk" class="ie8 oldie"> <![endif]-->
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="Content/common.css" rel="stylesheet" />
+    <link href="Content/main.css" rel="stylesheet" />
+    <script src="Scripts/libs/jquery-1.9.1.js"></script>
+    <script src="Scripts/libs/bootstrap.js"></script>
+    <script src="Scripts/libs/underscore.js"></script>
+    <script src="Scripts/libs/handlebars.js"></script>
+    <script src="Scripts/libs/ember.js"></script>
+    <script src="Scripts/libs/ember-data.js"></script>
+    <script src="Scripts/libs/scriptloader.js"></script>
+
+</head>
+<body>
+        <div id="ember-app"></div>
+        
+		<script type="text/javascript">
+            if (window.location.search.indexOf("?test") !== -1) {
+				document.write(
+						'<div id="qunit"></div>' +
+						'<div id="qunit-fixture"></div>' +
+						'<link rel="stylesheet" href="tests/runner.css">' +
+						'<link rel="stylesheet" href="tests/vendor/qunit-1.12.0.css">' +
+						'<script src="tests\/vendor\/jquery.mockajax.js"><\/script>' +
+						'<script src="test\s/vendor\/qunit-1.12.0.js"><\/script>' +
+						'<script src="tests\/tests.js"><\/script>'
+				);
+			}
+        </script>
+        <script src="Scripts/app.js"></script>
+        <script src="Scripts/templates.js"></script>
+        <script>$(document).ready(function () {
+                        sl.require('setup/applicationsetup');
+                });
+        </script>
+        <script src="http://localhost:35729/livereload.js"></script>
+   
+</body>
+</html>
