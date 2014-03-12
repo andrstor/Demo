@@ -44,9 +44,7 @@
   <ItemGroup>
     <Folder Include="dist\Content\" />
     <Folder Include="dist\Images\" />
-    <Folder Include="src\app\models\base\" />
     <Folder Include="src\app\models\extensions\" />
-    <Folder Include="src\app\Modules\" />
     <Folder Include="src\app\Plugins\Controls\" />
     <Folder Include="src\sass\Global\Resets\" />
     <Folder Include="src\sass\Layout\" />
@@ -61,6 +59,7 @@
     <Content Include="dist\Scripts\libs\ember.prod.js" />
     <Content Include="dist\Scripts\libs\handlebars.js" />
     <Content Include="dist\Scripts\libs\jquery-1.9.1.js" />
+    <Content Include="dist\Scripts\libs\localstorage_adapter.js" />
     <Content Include="dist\Scripts\libs\qunit.js" />
     <Content Include="dist\Scripts\libs\scriptloader.js" />
     <Content Include="dist\Scripts\libs\underscore.js" />
@@ -70,6 +69,9 @@
     <Content Include="dist\tests\vendor\qunit-1.12.0.js" />
     <Content Include="Gulp - ReadMe.txt" />
     <Content Include="gulpfile.js" />
+    <Content Include="src\app\models\base\comment.js" />
+    <Content Include="src\app\models\base\post.js" />
+    <Content Include="src\app\Modules\displaypost.html" />
     <Content Include="src\app\Pages\application.html" />
     <Content Include="src\app\Pages\ApplicationController.js" />
     <Content Include="src\app\Pages\ApplicationRoute.js" />
@@ -83,6 +85,14 @@
     <Content Include="src\app\Pages\Loading\LoadingController.js" />
     <Content Include="src\app\Pages\Loading\LoadingRoute.js" />
     <Content Include="src\app\Pages\Loading\LoadingView.js" />
+    <Content Include="src\app\Pages\Posts\New\posts_new.html" />
+    <Content Include="src\app\Pages\Posts\New\PostsNewController.js" />
+    <Content Include="src\app\Pages\Posts\New\PostsNewRoute.js" />
+    <Content Include="src\app\Pages\Posts\PostsRoute.js" />
+    <Content Include="src\app\Pages\Posts\posts_index.html" />
+    <Content Include="src\app\Pages\Posts\posts.html" />
+    <Content Include="src\app\Pages\Posts\PostsIndexRoute.js" />
+    <Content Include="src\app\Pages\Post\post.html" />
     <Content Include="src\app\Plugins\embermixins\groupableMixin.js" />
     <Content Include="src\app\Plugins\embermixins\serializable.js" />
     <Content Include="src\app\Plugins\Handlebarhelpers\helpers.js" />
@@ -102,6 +112,7 @@
     <Content Include="src\libs\handlebars.js" />
     <Content Include="src\libs\jquery-1.9.1.js" />
     <Content Include="src\libs\jquery.js" />
+    <Content Include="src\libs\localstorage_adapter.js" />
     <Content Include="src\libs\qunit.js" />
     <Content Include="src\libs\scriptloader.js" />
     <Content Include="src\libs\underscore.js" />
@@ -112,7 +123,7 @@
     <None Include="dist\fonts\bootstrap\glyphicons-halflings-regular.eot" />
     <None Include="dist\fonts\bootstrap\glyphicons-halflings-regular.ttf" />
     <None Include="dist\fonts\bootstrap\glyphicons-halflings-regular.woff" />
-    <None Include="packages.json" />
+    <None Include="package.json" />
     <None Include="src\sass\Global\Frameworks\bootstrap.scss" />
     <None Include="src\sass\Global\Frameworks\bootstrap\bootstrap.scss" />
     <None Include="src\sass\Global\Frameworks\bootstrap\_alerts.scss" />

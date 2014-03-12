@@ -7,6 +7,15 @@ App.Router.reopen({
 
 App.Router.map(function () {
     this.route('index', { path: '/' });
+
+
+
+    //Posts & commments
+    this.resource('posts', function () {
+        this.route('new');
+        this.route('view');
+    });
+    this.resource('post', { path: '/post/:post_id' });
 });
 
 

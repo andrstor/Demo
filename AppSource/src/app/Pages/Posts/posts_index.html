@@ -1,0 +1,14 @@
+<h1>Posts Index template</h1>
+
+{{#each post in content}}
+    <div class="well well-sm">
+        {{render 'displaypost' post}}        
+    </div>
+{{/each}}
+{{#unless content}}
+<p class="alert alert-info">No posts here. {{#link-to 'posts.new'}}Add a new post{{/link-to}}</p>
+{{/unless}}
+
+<div>
+    {{#link-to 'posts.new'}}<button class="btn">Add new</button>{{/link-to}}
+</div>

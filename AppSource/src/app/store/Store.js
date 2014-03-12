@@ -5,7 +5,11 @@ sl.require(/models\/extensions/);
 
 var get = Ember.get;
 
-App.ApplicationAdapter = DS.RESTAdapter.extend({
+App.ApplicationAdapter = DS.LSAdapter.extend({
+    namespace: 'demo-emberjs'
+});
+
+    /*DS.RESTAdapter.extend({
     host: "http://localhost:59793/api/",
     antiForgeryTokenSelector: "#antiForgeryToken",
     updateRecord: function (store, type, record) {
@@ -29,3 +33,4 @@ App.ApplicationAdapter = DS.RESTAdapter.extend({
     }
 });
 
+*/

@@ -23,6 +23,7 @@ if (window.location.search.indexOf("?test") !== -1) {
 sl.require(/setup\/initializers/);
 
 sl.require(/components/);
+sl.require(/models/);
 
 sl.require('store/store');
 
